@@ -1,5 +1,6 @@
 # 365DaysOfCode
- My 365 day journey #365DaysOfCode
+My 365 day journey #365DaysOfCode
  
- ![Alt text](https://www.figma.com/file/zaA85Z0H4yJU4NyoO9hJOC/Untitled?node-id=1%3A2&t=QJNpYXVU0cwDtplM-0)
-<img src="https://www.figma.com/file/zaA85Z0H4yJU4NyoO9hJOC/Untitled?node-id=1%3A2&t=QJNpYXVU0cwDtplM-0">
+![Descripción de la imagen](https://picsum.photos/800/600)
+<image src="https://picsum.photos/800/600" alt="Descripción de la imagen">
+
