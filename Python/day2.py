@@ -107,3 +107,14 @@ print(type(d))
 print(type(e))
 print(type(f))
 print(type(g))
+print("Tipos\nde\ndatos")  #\n salto de línea
+print("Primero\tSegundo\tTercero")  #\t tabulación
+print("1\t2\t3")
+print('Ana\'s dolls') #Si se quiere imprimir comillas dentro de la cadena de carácteres se puede de tres formas:
+print("Estas comillas son simples (')") #Si se quiere comillas simples se delimita con comillas dobles
+print('Estas comillas son dobles (")') #Si se quiere comillas dobles, se delimita con comillas simples
+print("Estas son comillas simples (\') y estas son dobles (\")") #Si se requiere las dos, tanto comillas simples como dobles, se usa backslash \
+print("""Cuando se desea imprimir textos que se extienden por más de una línea de código: 
+1. Hola
+2. Mundo
+3. ¡Hola, Mundo!""") #Cuando se desea imprimir textos que se extienden por más de una línea de código se usan tres comillas dobles como delimintador
