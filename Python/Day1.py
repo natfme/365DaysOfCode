@@ -27,7 +27,7 @@ I'll be using Replit, an amazing online IDE so I can do this from my phone where
 print("I am feeling ok")
 print("You can follow my progress at replit.com/@")
 
-#replit100DaysOfCode
+#100DaysOfCode
 
 # this is the first comment
 spam = 1  # and this is the second comment

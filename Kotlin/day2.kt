@@ -75,6 +75,7 @@ fun main() {
 
     var number = 10
     number = 11 // ok
+    println(number)
 }
 
 //Variables
@@ -95,3 +96,4 @@ var number = 10
 number = 11 // ok
 number = "twelve" // an error here!
 */
+

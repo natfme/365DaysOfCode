@@ -7,5 +7,5 @@ fun main(){  //fun main(args : Array<String>)
     println("xD")
     println("Day1 challenge")
     println("Kotlin is fun xD")
-    println(Yaaay!)
+    println("Yaaay!")
 }
