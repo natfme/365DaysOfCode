@@ -69,3 +69,10 @@ elif username == "Anna" and password == "SmashTHEb*gs!":
   print("Yo! Anna! What up?!")
 else:
   print("You do not have access. Go away!")
+
+x = [1, 2, 3]
+y = x
+print(x)
+print(y)
+y[1] = 4
+print(x) #[1, 4, 3]

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="kotlin">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/day5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day1-.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
