@@ -73,6 +73,7 @@ fun main() {
     println(e)
 }*/
 
+/*
 import java.util.Scanner // a class (type) from the Java standard library
 
 fun main() {
@@ -84,3 +85,37 @@ fun main() {
     println(num2) // prints the second number
     println(num1) // prints the first number
 }
+
+Write a program that reads two lines and then two numbers and outputs them in the same order, each on a new line.*/
+/* 
+import java.util.Scanner
+
+fun main() {
+    val scanner = Scanner(System.`in`) // reads data
+
+    val lin1 = scanner.next()
+    val lin2 = scanner.next()
+    val num1 = scanner.next()
+    val num2 = scanner.nextInt()
+
+    println(lin1)
+    println(lin2)
+    println(num1)
+    println(num2)
+}*/
+
+import java.util.Scanner
+
+fun main() {
+    val scanner = Scanner(System.`in`)
+
+    val s1 = scanner.nextLine()
+    val n = scanner.nextInt()
+    val s2 = scanner.next()
+
+    println(s1)
+    println(n)
+    println(s2)
+    }
+
+    //How many KiB are there in 1536 B? 1.5 KiB
