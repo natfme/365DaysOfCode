@@ -63,4 +63,6 @@ The String type represents a sequence of characters in double quotes. It is one 
 
 val creditCardNumber = "1234 5678 9012 3456"
 val message = "Learn Kotlin instead of Java."
+
+It was a tricky task, but you nailed it!
 */
