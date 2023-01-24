@@ -1,4 +1,4 @@
-import kotlin.text.toDouble/*
+import kotlin.text.toDouble
 /* 
 Standard input
 Standard input is a stream of data that goes into the program. It is supported by the operating system. By default, standard input obtains data from the keyboard, but it is also possible to get it from a file.
