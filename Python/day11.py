@@ -63,3 +63,18 @@ y = 20
 _ = x + y
 
 print(_)
+
+print(-42/10)
+print(42/-10)
+print(42/10)
+print(-42/-10)
+print()
+print(-42//10)
+print(42//-10)
+print(42//10)
+print(-42//-10)
+print()
+print(-42%10)
+print(42%-10)
+print(42%10)
+print(-42%-10)
