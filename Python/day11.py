@@ -27,7 +27,7 @@ Use input and if statements to add the extra day for leap year.
 Make the computer do all the hard work and math for you. You do the thinking beforehand.
 """
 
-LeapYear = input("Is a leap year (Please use Y or N for yes and no.): ")
+""" LeapYear = input("Is a leap year (Please use Y or N for yes and no.): ")
 LeapYear = LeapYear.lower()
 
 if LeapYear == "y":
@@ -62,7 +62,7 @@ x = 10
 y = 20
 _ = x + y
 
-print(_)
+print(_) """
 
 print(-42/10)
 print(42/-10)
@@ -78,3 +78,4 @@ print(-42%10)
 print(42%-10)
 print(42%10)
 print(-42%-10)
+print(431 % -6)
