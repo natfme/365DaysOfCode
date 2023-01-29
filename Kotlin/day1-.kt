@@ -8,4 +8,5 @@ fun main(){  //fun main(args : Array<String>)
     println("Day1 challenge")
     println("Kotlin is fun xD")
     println("Yaaay!")
+    println("Not correct, but keep on trying and never give up! We believe in you!")
 }
