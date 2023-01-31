@@ -117,3 +117,63 @@ println(num++ + ++num)
 (num = 1) 0 + ++num 
 (num = 2) 0 + 2
 */
+
+/*
+Practice 2
+
+Time format
+ Medium
+
+You are given a number that represents the number of seconds passed since 1.1.1970.
+Write a program that calculates the current time, i.e., finds the hours, minutes, and seconds of the given number of seconds.
+
+Format: hours:minutes:seconds
+
+Example: 14:9:7
+
+You don't have to import anything, just use % and /, and remember how long one day is.
+You do not need to print the number of days and do not think about UTC and GMT.
+
+Hint --
+1 minute = 60 seconds
+1 hour     = 60 minutes
+1 day       = 24 hours
+1 hour     = 60 minutes x 60 seconds = 3600 seconds
+1 day       = 3600 seconds * 24 hours  = 86400 seconds
+
+
+
+fun main() {
+    val totalSeconds = System.currentTimeMillis() / 1000 // dont change this line
+    // enter your code
+
+    val totalDays = totalSeconds / 86400   //No se necesitan imprimir pero si calcular
+    val totalHours = totalSeconds % 86400 / 3600
+    val totalMinutes = totalSeconds % 86400 % 3600 / 60
+    val totalSeconding = totalSeconds % 86400 % 3600 % 60
+
+    println("$totalHours:$totalMinutes:$totalSeconding")
+}
+*/
+//Parentheses in (totalSeconds % 86400) are unnecessary and can be replaced with: totalSeconds % 86400
+//Parentheses in ((totalSeconds % 86400) % 3600) are unnecessary and can be replaced with: (totalSeconds % 86400) % 3600
+
+/*
+Practice 3
+
+You and your friend decided to bake an apple pie. However, you don't know how many apples you have in total. So, your friend wrote a program that calculates the sum of apples as the sum of unsigned integers.
+
+It does not work correctly now. Find and fix errors in this program.
+
+So, you need to explicitly specify it's unsigned like how you would do when declaring long [ex:  val num: Long = 5l] you need to add "u" at the end. For more info on why: https://kotlinlang.org/docs/basic-types.html#unsigned-integers
+*/
+
+fun main() {
+    val yourApples: UInt = 5u
+    val friendsApples: UInt = 7u
+    println(yourApples + friendsApples) 
+
+    // do not change the code below
+    println("${yourApples::class.simpleName}")
+    println("${friendsApples::class.simpleName}")
+}
