@@ -358,3 +358,18 @@ Sample Output 3:
 Deficiency
 
 */
+
+fun main() {    
+    // write your code here
+    val hoursA = readLine()!!.toInt() // She should sleep at least A hours per day
+    val hoursB = readLine()!!.toInt() // Oversleeping is also not healthy and you should not sleep more than B hours
+    val hoursH = readLine()!!.toInt() // Anna sleeps H hours
+
+    if (hoursH < hoursA) {
+        println("Deficiency")
+    } else if (hoursH > hoursB) {
+        println("Excess")
+    } else {
+        println("Normal")
+    }
+}

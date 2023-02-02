@@ -1,1 +1,6 @@
-println("Day1 challenge")
+1
+2
+30
+1
+3
+20

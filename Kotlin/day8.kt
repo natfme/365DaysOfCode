@@ -66,3 +66,8 @@ val message = "Learn Kotlin instead of Java."
 
 It was a tricky task, but you nailed it!
 */
+
+fun main() {
+    println("Hello, World!")
+    println("Hola")
+}
