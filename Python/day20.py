@@ -180,3 +180,7 @@ z = int(input("How many should I add each time? "))
 
 for i in range(x, y, z):
   print(i)
+
+# números imaginarios ejemplo > 1+5j -> 1 parte real y 5j parte imaginaria
+
+print(type(1+5j))
