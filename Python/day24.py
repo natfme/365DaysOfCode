@@ -272,13 +272,3 @@ x = x0 + v0 * t + (1/2) * a * t ** 2
 print(f"La posición final es {x :.2f} metros.")
 
 ## ☝️ Escriba su código ENCIMA de esta línea ☝️ ##
-
-
-
-
-
-
-
-
-
-

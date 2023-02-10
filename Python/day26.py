@@ -22,6 +22,11 @@ We can clear the code above by using the os.system function to 'clear' the conso
 
 os.system("clear")
 
+import os
+for i in range(1, 1000):
+  print(i)
+  os.system("clear")
+
 Do you notice how it clears the console? Cool, right?!
 
 Let's try one more...
@@ -57,6 +62,17 @@ time.sleep(1)
 os.system("clear")
 
 Try it out with other amounts of time and see what happens.
+
+import os, time
+
+print("Welcome")
+print("to")
+print("Replit")
+
+time.sleep(1)
+os.system("clear")
+
+username = input("Username: ")
 """
 
 # 👉 Day 26 Challenge
@@ -105,7 +121,55 @@ Hints:
 * What command do you need to use to return (hint, hint) to the main menu (subroutine)?
 * Create a while True loop that clears the code and pauses the code. What libraries would you need for these things to happen?
 * You may also need if statements within your loop.
-"""
+
+---------------------------------------------------------------
+
+from replit import audio
+import os, time
+
+
+def play():
+  source = audio.play_file('audio.wav')
+  source.paused = False  # unpause the playback
+
+  while True:
+    # Start taking user input and doing something with it
+    stop_playback = int(
+      input("Press 2 anytime to stop playback and go back to the menu : ")
+    )  # giving the user the option to stop playback
+
+    if stop_playback == 2:
+      source.paused = True  # Pausa la reproducción
+      return # let's go back from this play() subroutine
+    else:
+      continue
+
+while True:
+  # clear the screen
+  os.system("clear")
+  print("🎵 Mi cajita de música_")
+
+  # Show the menu
+  time.sleep(1)
+  print("write 1 to play")
+  time.sleep(1)
+  print("write 2 to exit")
+  time.sleep(1)
+  print("Press anything else to see the menu again")
+
+  userInput = int(input())
+
+  # take user's input
+  if userInput == 1:
+    # check whether you should call the play() subroutine depending on user's input
+    print("Playing some proper tunes!")
+    play()
+  elif userInput == 2:
+    exit()
+  else:
+    continue
+
+-------------------------------------------------------------
 
 from replit import audio
 
@@ -139,3 +203,5 @@ while True:
     exit()
   else :
     continue
+    
+"""
