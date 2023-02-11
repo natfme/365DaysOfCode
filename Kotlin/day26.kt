@@ -237,14 +237,27 @@ Sample Input 3:
 
 Sample Output 3:
 
-*/
 
 // Solution
+const val END_RANGE = 1000
 
-fun main(args: Array<String>) {
-    val a = 15
-    val b = 4
+fun main() {
+    // put your code here
+    val a = readLine()!!.toInt()
+    val b = readLine()!!.toInt()
+    val c = readLine()!!.toInt()
+    val d = readLine()!!.toInt()
 
-    val result = a / b
-    println(result)
-}
+    for (i in 0..END_RANGE) {
+        val x = a * i * i * i + b * i * i + c * i + d
+
+        if (x == 0) {
+            println(i)
+        }
+    }
+
+Otra solución para analizar
+
+fun main() = Array(4) { readLine()!!.toInt() }.let { 
+    for (i in 1..1000) { if (it[0] * i * i * i + it[1] * i * i + it[2] * i + it[3] == 0) println(i) } }
+*/

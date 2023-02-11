@@ -1,0 +1,89 @@
+// Day27 - For loop and ranges
+
+/* The product of numbers from a to b
+Write a program that prints the product of all the integer numbers from a to b (a < b).
+
+Include a and exclude b from your calculation.
+
+The result can be large, so you should use the Long type.
+
+Sample Input 1:
+1
+2
+
+Sample Output 1:
+1
+
+Sample Input 2:
+100
+105
+
+Sample Output 2:
+11035502400
+
+fun main() {
+    val a = readLine()!!.toLong()
+    val b = readLine()!!.toLong()
+    var resultado: Long = 1
+
+    if (a < b) {
+        for (i in a until b) {
+            resultado *= i
+        }
+        println(resultado)
+    }
+}
+*/
+
+// Practice 2
+
+/*
+The longest sequence
+Write a program that reads N numbers and outputs the length of the longest sequence in non-descending order. By non-descending, we mean that the next element is either equal or greater than the previous one (A<=B). Elements of the sequence are to follow one another.
+
+Input format
+
+The first line contains the positive integer number N (N>0).
+The other lines contain N numbers.
+
+Example
+
+The input array is 1 2 4 1 2 2 5 7 4 3. In this case, the length of the longest sequence in non-descending order is 5. It includes these elements: 1 2 2 5 7.
+
+Sample Input 1:
+10
+1
+2
+4
+1
+2
+2
+5
+7
+4
+3
+
+Sample Output 1:
+5
+*/
+
+fun main() {
+    // write your code here
+    val n = readLine()!!.toInt()
+    var maxLength = 1
+    //val suma = mutableListOf<Int>()
+    val numbers = MutableList(n) { readLine()!!.toInt() }
+
+    //val (a, b) = Array(2) { readLine()!!.toInt() }
+    println("----------------")
+    println(n)
+    println(numbers)
+    for (i in 1..n) {
+        val x1 = numbers[(i-1)]
+        println("i es: $i")
+        println(x1)
+        val x2 = numbers[(i)]
+        println(x2)
+        println("----------------")
+    }
+}
