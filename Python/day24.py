@@ -243,7 +243,7 @@ Salida Ejemplo 3
 La posición final es 1469.22 metros.
 """
 
-##################################################
+""" ##################################################
 ### 💻  Ejemplo: Ejercicios de física (I)  💻 ###
 ##################################################
 
@@ -271,4 +271,42 @@ x = x0 + v0 * t + (1/2) * a * t ** 2
 
 print(f"La posición final es {x :.2f} metros.")
 
-## ☝️ Escriba su código ENCIMA de esta línea ☝️ ##
+## ☝️ Escriba su código ENCIMA de esta línea ☝️ ## """
+
+""" print("El número más grande")
+largest_number = -999999999
+number = int(input())
+if number == -1:
+    print(largest_number)
+    exit()
+if number > largest_number:
+    largest_number = number
+# Ir a la línea 02
+
+print("Calculadoa de impuestos")
+income = float(input("Introduce el ingreso anual: "))
+
+if income < 85528:
+	tax = income * 0.18 - 556.02
+# Escribe tu código aquí.
+
+tax = round(tax, 0)
+print("El impuesto es:", tax, "pesos") """
+
+# Almacena el actual número más grande aquí.
+largest_number = -999999999
+ 
+# Ingresa el primer valor.
+number = int(input("Introduce un número o escribe -1 para detener: "))
+ 
+# Si el número no es igual a -1, continuaremos
+while number != -1:
+    # ¿Es el número más grande que el valor de largest_number?
+    if number > largest_number:
+        # Sí si, se actualiza largest_number.
+        largest_number = number
+    # Ingresa el siguiente número.
+    number = int(input("Introduce un número o escribe -1 para detener: "))
+ 
+# Imprime el número más grande.
+print("El número más grande es:", largest_number)
