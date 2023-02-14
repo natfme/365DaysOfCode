@@ -140,7 +140,7 @@ Think about what symbol you need for center alignment. How many spaces should yo
 Think about the length of the heading. Maybe that's how many spaces you would need to center align the text.
 """
 
-print("#---------------------------------------------------------------------------------------#")
+""" print("#---------------------------------------------------------------------------------------#")
 
 print("30 Days Down - What did you think?")
 print()
@@ -150,7 +150,7 @@ for i in range(1,31):
   myText = f"You thought Day {i} was"
   print(f"{myText:^35}")
   print(f"{thought:^35}")
-  print()
+  print() """
 
 """ print("30 Days Down - What did you think?")
 print()
@@ -161,3 +161,92 @@ for i in range(1, 31):
   print(f"{myText:^35}")
   print(f"{thought:^35}")
   print() """
+
+counter = 5
+while counter != 0:
+  print("Dentro del bucle.", counter)
+  counter -= 1
+print("Fuera del bucle.", counter)
+
+print("-----------------------------------------------------------------------")
+
+counter = 5
+while counter:
+  print("Dentro del bucle.", counter)
+  counter -= 1
+print("Fuera del bucle.", counter)
+
+for i in range(100):
+    # do_something()
+    pass
+
+""" La palabra clave pass dentro del cuerpo del bucle - no hace nada en absoluto; es una instrucción vacía - la colocamos aquí porque la sintaxis del bucle for exige al menos una instrucción dentro del cuerpo (por cierto - if, elif, else y while expresan lo mismo). """
+
+power = 1
+for expo in range(16):
+    print("2 a la potencia de", expo, "es", power)
+    power *= 2
+
+print("Break and continue")
+print()
+# break - ejemplo
+
+print("La instrucción break:")
+for i in range(1, 6):
+    if i == 3:
+        break
+    print("Dentro del bucle.", i)
+print("Fuera del bucle.")
+
+
+# continue - ejemplo
+
+print("\nLa instrucción continue:")
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print("Dentro del bucle.", i)
+print("Fuera del bucle.")
+
+""" Estas dos instrucciones son:
+
+break - sale del bucle inmediatamente, e incondicionalmente termina la operación del bucle; el programa comienza a ejecutar la instrucción más cercana después del cuerpo del bucle.
+continue - se comporta como si el programa hubiera llegado repentinamente al final del cuerpo; el siguiente turno se inicia y la expresión de condición se prueba de inmediato.
+Ambas palabras son palabras clave reservadas. """
+
+largest_number = -99999999
+counter = 0
+
+while True:
+    number = int(input("Ingresa un número o escribe -1 para finalizar el programa: "))
+    if number == -1:
+        break
+    counter += 1
+    if number > largest_number:
+        largest_number = number
+
+if counter != 0:
+    print("El número más grande es", largest_number)
+else:
+    print("No has ingresado ningún número.")
+
+print("-----------------------------------------------------------------------------")
+
+largest_number = -99999999
+counter = 0
+
+number = int(input("Ingresa un número o escribe -1 para finalizar el programa: "))
+
+while number != -1:
+    if number == -1:
+        continue
+    counter += 1
+
+    if number > largest_number:
+        largest_number = number
+    number = int(input("Ingresa un número o escribe -1 para finalizar el programa: "))
+
+if counter:
+    print("El número más grande es", largest_number)
+else:
+    print("No has ingresado ningún número.")
