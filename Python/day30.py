@@ -214,7 +214,7 @@ break - sale del bucle inmediatamente, e incondicionalmente termina la operació
 continue - se comporta como si el programa hubiera llegado repentinamente al final del cuerpo; el siguiente turno se inicia y la expresión de condición se prueba de inmediato.
 Ambas palabras son palabras clave reservadas. """
 
-largest_number = -99999999
+""" largest_number = -99999999
 counter = 0
 
 while True:
@@ -250,3 +250,89 @@ if counter:
     print("El número más grande es", largest_number)
 else:
     print("No has ingresado ningún número.")
+ """
+""" print("---------- Escenarios ----------")
+print()
+print("La sentencia break - atrapado en un bucle")
+
+while True:
+    word = input("Escriba una palabra, si desea detener el ciclo escriba \"Detente\": ")
+    if word == "Detente":
+        break
+print("Has dejado el bucle con éxito")
+
+print()
+print("La sentencia continue - el Feo Devorador de Vocales")
+
+user_word = input("Ingrese una palabra: ")
+user_word = user_word.upper()
+
+for i in user_word:
+    if i == "A":
+        continue
+    elif i == "E":
+        continue
+    elif i == "I":
+        continue
+    elif i == "O":
+        continue
+    elif i == "U":
+        continue
+    else:
+        print(f"{i}")
+
+ # Indicar al usuario que ingrese una palabra
+# y asignarlo a la variable user_word.
+
+for letter in user_word:
+    # Completa el cuerpo del bucle for.
+
+print()
+print("La sentencia continue - el Lindo Devorador de Vocales")
+
+word_without_vowels = ""
+
+# Indicar al usuario que ingrese una palabra
+# y asignarla a la variable user_word.
+
+user_word = input("Ingrese una palabra: ")
+user_word = user_word.upper()
+
+for i in user_word:
+    if i == "A":
+        continue
+    elif i == "E":
+        continue
+    elif i == "I":
+        continue
+    elif i == "O":
+        continue
+    elif i == "U":
+        continue
+    else:
+        word_without_vowels += i
+
+print(f"{word_without_vowels}")
+
+#for letter in user_word:
+    # Completa el cuerpo del bucle.
+
+# Imprimir la palabra asignada a word_without_vowels. """
+
+i = 1
+while i < 5:
+    print(i)
+    i += 1
+else:
+    print("else:", i)
+
+for i in range(5):
+    print(i)
+else:
+    print("else:", i)
+
+i = 111
+for i in range(2, 1):
+    print(i)
+else:
+    print("else:", i)
