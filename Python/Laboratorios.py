@@ -39,3 +39,36 @@ while capa <= numeroBloques:
 
 print("La altura de la pirámide es:", altura)
 
+name = input("Escribe tu nombre: ")
+rolName = input("Escribe tu nombre de rol: ")
+firstAdjective = input("Escribe el primer adjetivo: ")
+secondAdjective = input("Escribe el segundo adjetivo: ")
+firstFood = input("Escribe la primera comida: ")
+secondFood = input("Escribe la segunda comida: ")
+feelings = input("Escribe un sentimiento: ")
+
+print()
+print(f"{name} comenzó su primer bootcamp de Generation hoy. Se está capacitando como {rolName}. Descubrieron que su cohorte era muy {firstAdjective} pero su maestro era, al menos, {secondAdjective}. Para el almuerzo comieron {firstFood} y {secondFood} mientras revisaban sus notas. Sienten {feelings} pero están decididos a completar el bootcamp.")
+
+def dispense_fibonnaci(sequence_number):
+    x = 0
+    y = 1
+    lista = [x, y]
+
+    if sequence_number in range(0, 100):
+        for i in range(sequence_number-1):
+            z = x + y
+            lista.append(z)
+            x = y
+            y = z
+            i += 1
+        print(lista)
+
+        if sequence_number == 0:
+            return 0
+        else:
+            return lista[sequence_number]
+
+
+numero = int(input("Escriba el número: "))
+print(dispense_fibonnaci(numero))
