@@ -28,7 +28,7 @@ Entrada de muestra:             Salida esperada:
 2                               La altura de la pirámide: 1
 
 """
-numeroBloques = int(input("Ingresa el número de bloques: "))
+""" numeroBloques = int(input("Ingresa el número de bloques: "))
 
 altura = 0
 capa = 1
@@ -49,7 +49,7 @@ feelings = input("Escribe un sentimiento: ")
 
 print()
 print(f"{name} comenzó su primer bootcamp de Generation hoy. Se está capacitando como {rolName}. Descubrieron que su cohorte era muy {firstAdjective} pero su maestro era, al menos, {secondAdjective}. Para el almuerzo comieron {firstFood} y {secondFood} mientras revisaban sus notas. Sienten {feelings} pero están decididos a completar el bootcamp.")
-
+ """
 def dispense_fibonnaci(sequence_number):
     x = 0
     y = 1
@@ -72,3 +72,15 @@ def dispense_fibonnaci(sequence_number):
 
 numero = int(input("Escriba el número: "))
 print(dispense_fibonnaci(numero))
+
+
+for ch in "john.smith@pythoninstitute.org":
+    if ch == "@":
+        break
+    print(ch, end="")
+
+for digit in "0165031806510":
+    if digit == "0":
+        print("x", end="")
+        continue
+    print(digit, end="")
