@@ -50,7 +50,7 @@ feelings = input("Escribe un sentimiento: ")
 print()
 print(f"{name} comenzó su primer bootcamp de Generation hoy. Se está capacitando como {rolName}. Descubrieron que su cohorte era muy {firstAdjective} pero su maestro era, al menos, {secondAdjective}. Para el almuerzo comieron {firstFood} y {secondFood} mientras revisaban sus notas. Sienten {feelings} pero están decididos a completar el bootcamp.")
  """
-def dispense_fibonnaci(sequence_number):
+""" def dispense_fibonnaci(sequence_number):
     x = 0
     y = 1
     lista = [x, y]
@@ -84,3 +84,130 @@ for digit in "0165031806510":
         print("x", end="")
         continue
     print(digit, end="")
+
+----------------------------------------------------------------------------------------------------
+
+Los fundamentos de las listas
+
+Escenario
+Había una vez un sombrero. El sombrero no contenía conejo, sino una lista de cinco números: 1, 2, 3, 4, y 5.
+
+Tu tarea es:
+
+escribir una línea de código que solicite al usuario que reemplace el número central en la lista con un número entero ingresado por el usuario (Paso 1)
+escribir una línea de código que elimine el último elemento de la lista (Paso 2)
+escribir una línea de código que imprima la longitud de la lista existente (Paso 3). """
+
+""" hat_list = [1, 2, 3, 4, 5, 6, 7]  # Esta es una lista existente de números ocultos en el sombrero.
+
+# Paso 1: escribe una línea de código que solicite al usuario
+# reemplazar el número de en medio con un número entero ingresado por el usuario.
+
+num = int(input("Escriba un número: "))
+x = int(len(hat_list) / 2)
+
+hat_list[x] = num
+
+print(hat_list)
+
+# Paso 2: escribe aquí una línea de código que elimine el último elemento de la lista.
+
+del hat_list[-1]
+print(hat_list)
+
+# Paso 3: escribe aquí una línea de código que imprima la longitud de la lista existente.
+
+print(len(hat_list))
+
+numbers = [111, 7, 2, 1]
+print(len(numbers))
+print(numbers)
+
+###
+
+numbers.append(4)
+
+print(len(numbers))
+print(numbers)
+
+###
+
+numbers.insert(0, 222)
+print(len(numbers))
+print(numbers)
+
+#
+
+my_list = [1, 2, 3, 4, 5, 6, 7]
+
+length = len(my_list)
+
+for i in range(length // 2):
+    my_list[i], my_list[length - i - 1] = my_list[length - i - 1], my_list[i]
+
+print(my_list)
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Los fundamentos de las listas: los Beatles
+
+Escenario
+Los Beatles fueron uno de los grupos de música más populares de la década de 1960 y la banda más vendida en la historia. Algunas personas los consideran el acto más influyente de la era del rock. De hecho, se incluyeron en la compilación de la revista Time de las 100 personas más influyentes del siglo XX.
+
+La banda sufrió muchos cambios de formación, que culminaron en 1962 con la formación de John Lennon, Paul McCartney, George Harrison y Richard Starkey (mejor conocido como Ringo Starr).
+
+
+Escribe un programa que refleje estos cambios y le permita practicar con el concepto de listas. Tu tarea es:
+
+paso 1: crea una lista vacía llamada beatles;
+paso 2: emplea el método append() para agregar los siguientes miembros de la banda a la lista: John Lennon, Paul McCartney y George Harrison;
+paso 3: emplea el buclefor y el append() para pedirle al usuario que agregue los siguientes miembros de la banda a la lista: Stu Sutcliffe, y Pete Best;
+paso 4: usa la instrucción del para eliminar a Stu Sutcliffe y Pete Best de la lista;
+paso 5: usa el método insert() para agregar a Ringo Starr al principio de la lista.
+Por cierto, ¿eres fan de los Beatles? (Los Beatles son una de las bandas favoritas de Greg. Pero espera...¿Quién es Greg?) """
+
+# paso 1
+beatles = []
+print("Paso 1:", beatles)
+
+# paso 2
+beatles.append("John Lennon")
+beatles.append("Paul McCartney")
+beatles.append("George Harrison")
+print("Paso 2:", beatles)
+
+# paso 3
+for i in range(2):
+    beatles.append(input("Ingrese los otros miembros: "))
+print("Paso 3:", beatles)
+
+# paso 4
+del beatles[-1]
+print("Paso 4.1:", beatles)
+del beatles[-1]
+print("Paso 4.2:", beatles)
+
+# paso 5
+beatles.insert(0,"Ringo Starr")
+print("Paso 5:", beatles)
+
+# probando la longitud de la lista
+print("Los Fav", len(beatles))
+
+# Las listas pueden ser anidadas
+my_list = [1, 'a', ["lista", 64, [0, 1], False]]
+
+my_list = ["blanco", "purpura", "azul", "amarillo", "verde"]
+ 
+for color in my_list:
+    print(color)
+
+lst = [1, 2, 3, 4, 5]
+lst_2 = []
+add = 0
+ 
+for number in lst:
+    add += number
+    lst_2.append(add)
+ 
+print(lst_2)
