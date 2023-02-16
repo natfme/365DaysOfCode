@@ -136,4 +136,4 @@ list_greetings = ["Bonjour", "Hola", "Privet", "Nǐ hǎo", "Ciao", "Konnichiwa",
 
 index = random.randint(0, len(list_greetings)-1)
 
-print(f"{list_greetings[index]}\n")
+print(f"{list_greetings[index]}")
