@@ -65,27 +65,12 @@ Sample Input 1:
 
 Sample Output 1:
 5
+
+fun sum(a: Int, b: Int): Int = a + b
 */
 
 fun main() {
-    // write your code here
-    val n = readLine()!!.toInt()
-    var maxLength = 1
-    //val suma = mutableListOf<Int>()
-    val numbers = MutableList(n) { readLine()!!.toInt() }
-
-    //val (a, b) = Array(2) { readLine()!!.toInt() }
-    println("----------------")
-    println(n)
-    println(numbers)
-    for (i in 1..n) {
-        val x1 = numbers[(i-1)]
-        println("i es: $i")
-        println(x1)
-        val x2 = numbers[(i)]
-        println(x2)
-        println("----------------")
-    }
+    
 }
 
-fun sum(a: Int, b: Int): Int = a + b
+

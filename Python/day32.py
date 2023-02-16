@@ -115,9 +115,25 @@ print(f"The last color is {colors[5]}")
 grocery_list = ["bananas", "bread", "milk", "eggs", "juice", "cheese"]
 print(f"The first grocery item to buy is {grocery_list[0]}.")
 
-👉 Day 32 Challenge
+""" 👉 Day 32 Challenge
+
 Create a list that stores greetings in different languages. Start with the language you speak.
 Then, go on the internet to find other greetings in other languages. Here is a list of greetings to get you started.
 Import random library. Generate a random number between 0 and maximum number of items in your list.
 At random, when the user clicks run, print one of the greetings.
 Use an f-string.
+
+Hints:
+Start with importing your library.
+Add your greetings as your list.
+Remember how you used random.randint to generate random numbers? Try that again here. (Don't forget to assign a variable to this).
+Remember your first greeting is index 0.
+print a random greeting.
+You will only need four lines of code to make this project run! """
+import random
+
+list_greetings = ["Bonjour", "Hola", "Privet", "Nǐ hǎo", "Ciao", "Konnichiwa", "Hallo", "Oi", "Anyoung", "Asalaam alaikum", "Goddag", "Shikamoo", "Goedendag", "Yassou", "Cześć", "Selamat siang", "Namaste", "Selam", "Shalom", "Hej", "Hei"]
+
+index = random.randint(0, len(list_greetings)-1)
+
+print(f"{list_greetings[index]}\n")
