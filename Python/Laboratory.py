@@ -149,3 +149,38 @@ my_list = [0, 3, 12, 8, 2]
 print(5 in my_list)
 print(5 not in my_list)
 print(12 in my_list)
+
+""" Practice 1
+
+Sample Input 1:
+10
+1
+2
+4
+1
+2
+2
+5
+7
+4
+3
+
+Sample Output 1:
+5 """
+
+my_list = []
+swapped = True
+num = int(input("¿Cuántos números?: "))
+
+for i in range(num):
+    my_list.append(val)
+
+while swapped:
+    swapped = False
+    for i in range(len(my_list) - 1):
+        if my_list[i] > my_list[i + 1]:
+            swapped = True
+            my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]
+
+print("\nOrdenada:")
+print(my_list)

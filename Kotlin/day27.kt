@@ -1,4 +1,6 @@
-// Day27 - For loop and ranges
+
+
+import kotlin.collections.mutableListOf// Day27 - For loop and ranges
 
 /* The product of numbers from a to b
 Write a program that prints the product of all the integer numbers from a to b (a < b).
@@ -73,21 +75,19 @@ fun main() {
     // write your code here
     val n = readLine()!!.toInt()
     var sum = 1
-    val numbers = MutableList(n) { readLine()!!.toInt() }
+    var numbers = MutableList(n) { readLine()!!.toInt() }
+    var password = true
 
-    println(numbers)
-
-    //val (a, b) = Array(2) { readLine()!!.toInt() }
-    for (i in 1..n) {
-        val x1 = numbers[(i-1)]
-        val x2 = numbers[(i+1)]
-        println(numbers[i])
-
-        while (x1 <= x2) {
-            sum += 1
+    while (password) {
+        password = false
+        for (j in 0..numbers.size-1){
+            println(numbers[j])
+            //println(numbers[j+1])
         }
     }
-    println(sum)
+    
+
+
 }
 
 
