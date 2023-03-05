@@ -74,20 +74,24 @@ fun sum(a: Int, b: Int): Int = a + b
 fun main() {
     // write your code here
     val n = readLine()!!.toInt()
-    var sum = 1
+    var sum = 0
     var numbers = MutableList(n) { readLine()!!.toInt() }
-    var password = true
-
-    while (password) {
-        password = false
-        for (j in 0..numbers.size-1){
-            println(numbers[j])
-            //println(numbers[j+1])
-        }
-    }
     
+    var num1 = numbers[0]
+    for (i in 1..numbers.size-1){
+         var num2 =numbers[i]
 
+        if (num1 <= num2) {
+            sum += 1
+        } else {
+            var sumaAct =sum
+        }
 
+        if ()
+
+        num1 = num2
+        
+        }
 }
 
 
