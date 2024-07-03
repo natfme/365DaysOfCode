@@ -2,3 +2,13 @@ Markdown
 ejemplo para añadir imágenes desde enlace
 ![Descripción de la imagen](https://picsum.photos/800/600)
 <image src="https://picsum.photos/800/600" alt="Descripción de la imagen">
+<image src="https://github.com/natfme/365DaysOfCode/blob/master/img_vect_icons/DaysOfCode.png?raw=true" alt="Descripción de la imagen" width="50%">
+![roadmap](https://drive.google.com/uc?id=19ueXjMxZJVkgc95jLuapGCk7SpprBKgG)
+
+Al link de compartir se le borra
+
+https://drive.google.com/file/d/19ueXjMxZJVkgc95jLuapGCk7SpprBKgG/view?usp=sharing
+
+file/d/ y se reemplaza por uc?id=
+
+también se borra /view?usp=sharing y se comparte en lector
